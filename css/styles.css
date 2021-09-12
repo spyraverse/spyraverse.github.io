@@ -1,7 +1,21 @@
 body {
-  background-color: rgb(38, 38, 30);
+  background-color: rgb(30, 30, 30);
 }
+
 h1, h2, h3, h4, h5, h6, p {
   color: rgb(140, 140, 140);
   font-family:Helvetica, sans-serif;
+}
+
+.icon-image {
+  border-radius: 8px;
+  width: 100%;
+}
+
+.title-image {
+  width: 100%;
+}
+
+.appstore-logo {
+  width: 50%;
 }
