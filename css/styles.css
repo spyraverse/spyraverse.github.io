@@ -30,6 +30,12 @@ h1, h2, h3, h4, h5, h6, p {
   width: 60%;
 }
 
+@media(max-width: 767px) {
+    .social-icon {
+        width: 90%;
+    }
+}
+
 .darker-background {
     background-color: rgb(20, 20, 20);
 }
@@ -75,6 +81,22 @@ h1, h2, h3, h4, h5, h6, p {
     opacity: 0.0;
 }
 
+.nav-title-icon {
+    width: 30px;
+    height: 30px;
+}
+
+@media(max-width: 767px) {
+    .nav-title-text {
+        font-size: 1.1rem;
+    }
+
+    .nav-title-icon2 {
+        width: 25px;
+        height: 25px;
+    }
+}
+
 .gameText {
     font-size: 25px;
     margin-bottom: 0.5rem;
@@ -105,7 +127,7 @@ h1, h2, h3, h4, h5, h6, p {
     }
 }
 
-@media(min-width: 767px) and (max-width: 900px) {
+@media(max-width: 900px) {
     .gameText {
         font-size: 13px;
     }
