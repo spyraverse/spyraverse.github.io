@@ -13,13 +13,197 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .title-image {
-  width: 100%;
+  width: 80%;
+}
+
+.header-image {
+  width: 60%;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .appstore-logo {
-  width: 50%;
+  width: 40%;
 }
 
 .social-icon {
   width: 60%;
+}
+
+.darker-background {
+    background-color: rgb(20, 20, 20);
+}
+
+.darker-navbar {
+    background-color: #111111;
+}
+
+.modes-3 {
+    width: 76%;
+}
+
+.gameRow {
+    padding-top: 20px;
+}
+
+@media(max-width: 767px) {
+    .modes-3 {
+        width: 100%;
+    }
+}
+
+.modes-4 {
+    width: 100%;
+}
+
+.mockupContainer {
+    position: relative;
+    width: 100%;
+}
+
+.mockup1 {
+    width: 100%;
+    z-index: 5;
+}
+
+.mockup2 {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 6;
+    opacity: 0.0;
+}
+
+.gameText {
+    font-size: 25px;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+}
+
+@media(min-width: 1750px) {
+    .gameText {
+        font-size: 30px;
+    }
+}
+
+@media(min-width: 1450px) and (max-width: 1750px) {
+    .gameText {
+        font-size: 25px;
+    }
+}
+
+@media(min-width: 1200px) and (max-width: 1450px) {
+    .gameText {
+        font-size: 20px;
+    }
+}
+
+@media(min-width: 900px) and (max-width: 1200px) {
+    .gameText {
+        font-size: 15px;
+    }
+}
+
+@media(min-width: 767px) and (max-width: 900px) {
+    .gameText {
+        font-size: 13px;
+    }
+}
+
+/* Animations */
+@-webkit-keyframes mockupFade {
+    0% {
+        opacity: 0.0;
+    }
+
+    45% {
+        opacity: 0.0;
+    }
+
+    50% {
+        opacity: 1.0;
+    }
+
+    95% {
+        opacity: 1.0;
+    }
+
+    100% {
+        opacity: 0.0;
+    }
+}
+
+@-moz-keyframes mockupFade {
+    0% {
+        opacity: 0.0;
+    }
+
+    45% {
+        opacity: 0.0;
+    }
+
+    50% {
+        opacity: 1.0;
+    }
+
+    95% {
+        opacity: 1.0;
+    }
+
+    100% {
+        opacity: 0.0;
+    }
+}
+
+<!-- IE10 -->
+@-ms-keyframes mockupFade {
+    0% {
+        opacity: 0.0;
+    }
+
+    45% {
+        opacity: 0.0;
+    }
+
+    50% {
+        opacity: 1.0;
+    }
+
+    95% {
+        opacity: 1.0;
+    }
+
+    100% {
+        opacity: 0.0;
+    }
+}
+
+@keyframes mockupFade {
+    0% {
+        opacity: 0.0;
+    }
+
+    45% {
+        opacity: 0.0;
+    }
+
+    50% {
+        opacity: 1.0;
+    }
+
+    95% {
+        opacity: 1.0;
+    }
+
+    100% {
+        opacity: 0.0;
+    }
+}
+
+.mockupFadeAnimations {
+    -webkit-animation: mockupFade 7.0s infinite linear;
+    -moz-animation: mockupFade 7.0s infinite linear;
+    -ms-animation: mockupFade 7.0s infinite linear;
+    animation: mockupFade 7.0s infinite linear;
 }
