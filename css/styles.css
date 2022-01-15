@@ -207,3 +207,7 @@ h1, h2, h3, h4, h5, h6, p {
     -ms-animation: mockupFade 7.0s infinite linear;
     animation: mockupFade 7.0s infinite linear;
 }
+
+.topSpace {
+    min-height: 48px;
+}
