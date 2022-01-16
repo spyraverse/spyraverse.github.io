@@ -95,6 +95,10 @@ h1, h2, h3, h4, h5, h6, p {
         width: 25px;
         height: 25px;
     }
+
+    .nav-title-middle {
+        vertical-align: middle;
+    }
 }
 
 .gameText {
@@ -237,5 +241,9 @@ h1, h2, h3, h4, h5, h6, p {
 @media(max-width: 767px) {
     .topSpace {
         min-height: 35px;
+    }
+
+    .hide-on-mobile {
+        display: none;
     }
 }
