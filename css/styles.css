@@ -247,3 +247,68 @@ h1, h2, h3, h4, h5, h6, p {
         display: none;
     }
 }
+
+.removeSection {
+    display: none;
+}
+
+.hideSection {
+    opacity: 0;
+}
+
+.directionsImage {
+    width:100%;
+}
+
+.directionsTitle {
+    width:75%;
+}
+
+/* Animations */
+@-webkit-keyframes pageAppear {
+    0% {
+        opacity: 0.0;
+    }
+
+    100% {
+        opacity: 1.0;
+    }
+}
+
+@-moz-keyframes pageAppear {
+    0% {
+        opacity: 0.0;
+    }
+
+    100% {
+        opacity: 1.0;
+    }
+}
+
+<!-- IE10 -->
+@-ms-keyframes pageAppear {
+    0% {
+        opacity: 0.0;
+    }
+
+    100% {
+        opacity: 1.0;
+    }
+}
+
+@keyframes pageAppear {
+    0% {
+        opacity: 0.0;
+    }
+
+    100% {
+        opacity: 1.0;
+    }
+}
+
+.pageAppearAnimations {
+    -webkit-animation: pageAppear 0.5s forwards linear;
+    -moz-animation: pageAppear 0.5s forwards linear;
+    -ms-animation: pageAppear 0.5s forwards linear;
+    animation: pageAppear 0.5s forwards linear;
+}
