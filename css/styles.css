@@ -328,3 +328,32 @@ h1, h2, h3, h4, h5, h6, p {
     -ms-animation: pageAppear 0.5s forwards linear;
     animation: pageAppear 0.5s forwards linear;
 }
+
+.directionsButton {
+    font-size: 25px;
+    opacity: 0.8;
+}
+
+@media(min-width: 1450px) and (max-width: 1750px) {
+    .directionsButton {
+        font-size: 23px;
+    }
+}
+
+@media(min-width: 1200px) and (max-width: 1450px) {
+    .directionsButton {
+        font-size: 20px;
+    }
+}
+
+@media(min-width: 900px) and (max-width: 1200px) {
+    .directionsButton {
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 900px) {
+    .directionsButton {
+        font-size: 14px;
+    }
+}
