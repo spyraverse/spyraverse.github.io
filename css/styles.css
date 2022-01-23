@@ -238,6 +238,14 @@ h1, h2, h3, h4, h5, h6, p {
     min-height: 48px;
 }
 
+.directionsGap {
+    min-height: 56px;
+}
+
+.topDirectionsSpace {
+    min-height: 48px;
+}
+
 @media(max-width: 767px) {
     .topSpace {
         min-height: 35px;
@@ -245,6 +253,14 @@ h1, h2, h3, h4, h5, h6, p {
 
     .hide-on-mobile {
         display: none;
+    }
+
+    .directionsGap {
+        min-height: 24px;
+    }
+
+    .topDirectionsSpace {
+        min-height: 24px;
     }
 }
 
