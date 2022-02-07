@@ -707,7 +707,6 @@
                     if (windowScroll > (itemTop + (itemHeight / 2) - windowHeight)) {
                         if (!$(item).hasClass('appeared')) {
                             $(item).addClass('appeared');
-                            console.log('Lamborghini ' + VIDEO_IDS[$(item).attr('contentIndex')]);
                             let index = $(item).attr('contentIndex');
                             $(item).find('source').attr('src', VIDEO_IDS[index]);
                             $(item)[0].load();
