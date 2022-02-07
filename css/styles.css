@@ -389,3 +389,24 @@ h1, h2, h3, h4, h5, h6, p {
 .galleryButton {
     width:100%;
 }
+
+.galleryVideo {
+    width:100%;
+}
+
+.galleryVideoContainer {
+    width:100%;
+}
+
+.galleryVideoLoading {
+    width:100%;
+}
+
+.galleryVideoLazy {
+    width:100%;
+}
+
+.galleryLink {
+    min-height: 250px;
+    width:100%;
+}
