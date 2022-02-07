@@ -410,3 +410,13 @@ h1, h2, h3, h4, h5, h6, p {
     min-height: 250px;
     width:100%;
 }
+
+.featuredRow {
+    padding-top: 25px;
+}
+
+@media(max-width: 992px) {
+    .featuredRow {
+        padding-top: 0px;
+    }
+}
