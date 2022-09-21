@@ -332,7 +332,11 @@ h1, h2, h3, h4, h5, h6, p {
 .directionsButton {
     font-size: 25px;
     opacity: 0.8;
-    margin-bottom: 6px;
+    vertical-align: top;
+}
+
+.directionsMargin {
+    margin-bottom: 10px;
 }
 
 @media(min-width: 1450px) and (max-width: 1750px) {
