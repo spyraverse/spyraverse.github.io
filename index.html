@@ -181,7 +181,7 @@
 
               <li class="nav-item page-scroll">
                 <a href="https://apps.apple.com/us/developer/spiro-metaxas/id1584716227" target="_blank">
-                    <button class="btn btn-outline-success my-2 my-sm-0 ml-sm-2" type="button">App Store</button>
+                    <button class="btn btn-outline-success my-2 my-sm-0 ml-sm-2" type="button"><i class="fa fa-apple"></i> App Store</button>
                 </a>
               </li>
 
@@ -316,7 +316,7 @@
                     <div class="col text-center">
                         <br>
                         <a class="galleryButton" href="spyragon/gallery/images" target="_blank">
-                            <button type="button" class="btn btn-outline-light directionsButton galleryButton">Image Gallery</button>
+                            <button type="button" class="btn btn-outline-light directionsButton galleryButton"><i class="fa fa-camera"></i> Image Gallery</button>
                         </a>
                     </div>
                     <div class="col-lg text-center d-none d-md-block"></div>
@@ -325,38 +325,38 @@
                 <div class="row featuredRow">
                     <div class="col-1 d-none d-lg-block"></div>
                     <div class="col d-none d-lg-block">
-                        <video class="galleryVideoContainer" autoplay muted loop>
-                            <source class="galleryVideo" src="videos/featured_001.mp4" type="video/mp4">
+                        <video class="galleryVideoContainer" autoplay muted loop contentIndex=0>
+                            <source class="galleryVideo" type="video/mp4">
                             <img class="galleryVideoLoading" src="img/LoaderImage.png">
                         </video>
                     </div>
                     <div class="col d-none d-lg-block">
-                        <video class="galleryVideoContainer" autoplay muted loop>
-                            <source class="galleryVideo" src="videos/featured_002.mp4" type="video/mp4">
+                        <video class="galleryVideoContainer" autoplay muted loop contentIndex=1>
+                            <source class="galleryVideo" type="video/mp4">
                             <img class="galleryVideoLoading" src="img/LoaderImage.png">
                         </video>
                     </div>
                     <div class="col d-none d-lg-block">
-                        <video class="galleryVideoContainer" autoplay muted loop>
-                            <source class="galleryVideo" src="videos/featured_003.mp4" type="video/mp4">
+                        <video class="galleryVideoContainer" autoplay muted loop contentIndex=2>
+                            <source class="galleryVideo" type="video/mp4">
                             <img class="galleryVideoLoading" src="img/LoaderImage.png">
                         </video>
                     </div>
                     <div class="col d-none d-lg-block">
-                        <video class="galleryVideoContainer" autoplay muted loop>
-                            <source class="galleryVideo" src="videos/video_001.mp4" type="video/mp4">
+                        <video class="galleryVideoContainer" autoplay muted loop contentIndex=3>
+                            <source class="galleryVideo" type="video/mp4">
                             <img class="galleryVideoLoading" src="img/LoaderImage.png">
                         </video>
                     </div>
                     <div class="col d-none d-lg-block">
-                        <video class="galleryVideoContainer" autoplay muted loop>
-                            <source class="galleryVideo" src="videos/featured_004.mp4" type="video/mp4">
+                        <video class="galleryVideoContainer" autoplay muted loop contentIndex=4>
+                            <source class="galleryVideo" type="video/mp4">
                             <img class="galleryVideoLoading" src="img/LoaderImage.png">
                         </video>
                     </div>
                     <div class="col d-none d-lg-block">
-                        <video class="galleryVideoContainer" autoplay muted loop>
-                            <source class="galleryVideo" src="videos/featured_005.mp4" type="video/mp4">
+                        <video class="galleryVideoContainer" autoplay muted loop contentIndex=5>
+                            <source class="galleryVideo" type="video/mp4">
                             <img class="galleryVideoLoading" src="img/LoaderImage.png">
                         </video>
                     </div>
@@ -368,7 +368,7 @@
                     <div class="col text-center">
                         <br>
                         <a class="galleryButton" href="spyragon/gallery/videos" target="_blank">
-                            <button type="button" class="btn btn-outline-light directionsButton galleryButton">Video Gallery</button>
+                            <button type="button" class="btn btn-outline-light directionsButton galleryButton"><i class="fa fa-video-camera"></i> Video Gallery</button>
                         </a>
                     </div>
                     <div class="col-lg text-center d-none d-md-block"></div>
@@ -569,10 +569,43 @@
                 $("#mockupImage1").delay(1000).addClass("mockupFadeAnimations");
                 $("#mockupImage2").delay(1000).addClass("mockupFadeAnimations");
 
-                $(function () {
-                  $('[data-toggle="tooltip"]').tooltip()
-                });
+                $('[data-toggle="tooltip"]').tooltip();
             })
+        </script>
+
+        <script type="text/javascript">
+            let VIDEO_IDS = [
+                'videos/featured_001.mp4',
+                'videos/featured_002.mp4',
+                'videos/featured_003.mp4',
+                'videos/video_001.mp4',
+                'videos/featured_004.mp4',
+                'videos/featured_005.mp4',
+            ];
+
+            var videoInitFinished = false;
+
+            const initVideos = function() {
+                var win = $(this);
+                // Don't load videos in background on small screens
+                if (!videoInitFinished && win.width() > 850) {
+                    videoInitFinished = true;
+
+                    $('.galleryVideoContainer').each(function(i, item) {
+                        let index = $(item).attr('contentIndex');
+                        $(item).find('source').attr('src', VIDEO_IDS[index]);
+                        $(item)[0].load();
+                    });
+                }
+            };
+
+            $(window).on('resize', function() {
+                initVideos();
+            });
+
+            $(window).on('load', function() {
+                initVideos();
+            });
         </script>
 
         <script type="text/javascript">
