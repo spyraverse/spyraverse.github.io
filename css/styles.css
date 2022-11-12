@@ -425,3 +425,25 @@ h1, h2, h3, h4, h5, h6, p {
         padding-top: 0px;
     }
 }
+
+.iconImage {
+    padding-top: 20px;
+}
+
+@media(min-width: 767px) {
+    .iconImage {
+        width: 75%;
+    }
+}
+
+@media(min-width: 600px) and (max-width: 767px) {
+    .iconImage {
+        width: 40%;
+    }
+}
+
+@media(max-width: 600px) {
+    .iconImage {
+        width: 50%;
+    }
+}
