@@ -370,7 +370,7 @@
                     <a href="https://spyraverse.com" target="_blank"><h4>Spyraverse Home</h4></a>
                     <br>
                     <a href="../privacypolicy.html" target="_blank"><p>Privacy Policy</p></a>
-                    <h6 class="text-center">&copy; 2021-2022 Spyraverse Games</h6>
+                    <h6 class="text-center" id="copyright">&copy; Spyraverse Games</h6>
                 </div>
             </div>
             <br><br>
@@ -386,6 +386,8 @@
                 $(".loader-wrap").delay(1500).fadeOut("slow");
                 $("#mockupImage1").delay(1500).addClass("mockupFadeAnimations");
                 $("#mockupImage2").delay(1500).addClass("mockupFadeAnimations");
+
+                $('#copyright').text('© 2021-' + (new Date().getFullYear()) + ' Spyraverse Games');
             })
         </script>
 
