@@ -107,9 +107,42 @@ h1, h2, h3, h4, h5, h6, p {
     line-height: 1.2;
 }
 
+.aboutText {
+    font-size: 20px;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+}
+
+.posterArtText {
+    font-size: 25px;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    line-height: 1.2;
+    font-weight: bold;
+}
+
+.founderText {
+    font-size: 18px;
+    margin-bottom: 0.5rem;
+    line-height: 1.0;
+    font-style: italic;
+}
+
 @media(min-width: 1750px) {
     .gameText {
         font-size: 30px;
+    }
+
+    .aboutText {
+        font-size: 25px;
+    }
+
+    .posterArtText {
+        font-size: 32px;
+    }
+
+    .founderText {
+        font-size: 22px;
     }
 }
 
@@ -117,11 +150,35 @@ h1, h2, h3, h4, h5, h6, p {
     .gameText {
         font-size: 25px;
     }
+
+    .aboutText {
+        font-size: 22px;
+    }
+
+    .posterArtText {
+        font-size: 28px;
+    }
+
+    .founderText {
+        font-size: 20px;
+    }
 }
 
 @media(min-width: 1200px) and (max-width: 1450px) {
     .gameText {
         font-size: 20px;
+    }
+
+    .aboutText {
+        font-size: 18px;
+    }
+
+    .posterArtText {
+        font-size: 25px;
+    }
+
+    .founderText {
+        font-size: 16px;
     }
 }
 
@@ -129,11 +186,35 @@ h1, h2, h3, h4, h5, h6, p {
     .gameText {
         font-size: 15px;
     }
+
+    .aboutText {
+        font-size: 15px;
+    }
+
+    .posterArtText {
+        font-size: 22px;
+    }
+
+    .founderText {
+        font-size: 14px;
+    }
 }
 
 @media(max-width: 900px) {
     .gameText {
         font-size: 13px;
+    }
+
+    .aboutText {
+        font-size: 13px;
+    }
+
+    .posterArtText {
+        font-size: 18px;
+    }
+
+    .founderText {
+        font-size: 12px;
     }
 }
 
@@ -447,3 +528,14 @@ h1, h2, h3, h4, h5, h6, p {
         width: 50%;
     }
 }
+
+.textLink {
+    color: rgb(255, 255, 255);
+}
+
+.founderLink {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+
